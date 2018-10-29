@@ -103,13 +103,10 @@ SELECT * FROM people;
 
 
 -- Extension: Deleting multiple entries
--- SPOILER: Have activated the Infinity Gauntlet and deleted half of the class...
-DELETE FROM people WHERE id < 12;
+-- SPOILER: Have activated the Infinity Gauntlet and randomly deleted half of the class...
+DELETE FROM people WHERE name IN (SELECT name FROM people ORDER BY Random() LIMIT 11);
 -- Also: Didn't like the first two Captain America films
 DELETE FROM movies WHERE title = 'Captain America: The First Avenger' OR title = 'Captain America: The Winter Soldier';
--- Delete more people (in the first half of the alphabet)!
-
-DELETE FROM people WHERE name BETWEEN 'A' AND 'M';
 
 -- Checking end result of all changes
 SELECT * FROM movies;
