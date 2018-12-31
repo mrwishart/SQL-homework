@@ -1,4 +1,8 @@
-# SQL Homework
+# Basics of SQL Homework
+
+Week 3, Day 1 homework of CodeClan, introducing the basics of using databases via SQL
+
+## Original brief:
 
 The local cinema are having a Marvel Movie Marathon! They have asked you to help maintain their database of movies with times and attendees.
 
